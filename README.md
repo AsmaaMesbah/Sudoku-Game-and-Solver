@@ -12,9 +12,17 @@ An interactive terminal-based Sudoku game with a built-in **backtracking** solve
 
 # Game Demo 
 1. Enter a Sudoku file
+![enter-filename](img/sudoku-demo-1.png)
 2. The program solves it internally
+![solving](img/sudoku-demo-2.png)
 3. You play manually
+![init-play](img/sudoku-demo-3.png)
+![playing](img/sudoku-demo-4.png)
 4. Your solution is checked against the correct one
+![correct](img/sudoku-demo-5.png)
+![wrong](img/sudoku-demo-6.png)
+5. You can quit anytime by pressing Q
+![quit](img/sudoku-demo-7.png)
 
 # Example Input 
 The text file must be of the following format (example from board1.txt)
@@ -31,7 +39,7 @@ The text file must be of the following format (example from board1.txt)
 ```
 **zero** refers to empty cells. 
 # How to Run
-```bash
+```
 gcc sudoku.c sudoku-solver.c -o sudoku
 ./sudoku
 ```
@@ -48,7 +56,7 @@ Then enter the name of the text file containing your board; for instance, `board
   - Colum
   - 3x3 grid
 ### Flowchart
-
+![flowchart](img/sudoku-solver-flowchart.png)
 ## 3. Game 
 You play using: 
 |**Key**|**Action**|
