@@ -11,17 +11,17 @@ An interactive terminal-based Sudoku game with a built-in **backtracking** solve
 - Reads board from `.txt` file
 
 # Game Demo 
-1. Enter a Sudoku file
+1. Enter a Sudoku file  
 ![enter-filename](img/sudoku-demo-1.png)
-2. The program solves it internally
+2. The program solves it internally  
 ![solving](img/sudoku-demo-2.png)
-3. You play manually
+3. You play manually  
 ![init-play](img/sudoku-demo-3.png)
 ![playing](img/sudoku-demo-4.png)
-4. Your solution is checked against the correct one
+4. Your solution is checked against the correct one  
 ![correct](img/sudoku-demo-5.png)
 ![wrong](img/sudoku-demo-6.png)
-5. You can quit anytime by pressing Q
+5. You can quit anytime by pressing Q  
 ![quit](img/sudoku-demo-7.png)
 
 # Example Input 
@@ -40,7 +40,7 @@ The text file must be of the following format (example from board1.txt)
 **zero** refers to empty cells. 
 # How to Run
 ```
-gcc sudoku.c sudoku-solver.c -o sudoku
+gcc sudoku.c sudoku-game.c -o sudoku
 ./sudoku
 ```
 Then enter the name of the text file containing your board; for instance, `board1.txt`.
@@ -76,13 +76,13 @@ The controls are implemented in the `play()` function.
 
 # Project Structure
 ```
-Sudoku/
+Sudoku-Game-and-Solver/
 │── sudoku.c          # Core logic (solver + game)
 │── sudoku.h          # Function declarations
-│── sudoku-solver.c   # Main program
+│── sudoku-game.c     # Main program
 │── board1.txt        # Example input
 │── board2.txt        # Example input
-
+│── img/              # Flowchart + demo images
 ```
 # Key Functions 
 - `solve()` --> backtracking solver
@@ -94,5 +94,3 @@ Sudoku/
 1. The following [site](https://sudoku.com/easy/) was used as a reference for the Sudoku boards used to test this program
 2. The following [site](https://lucid.app/) was used to create a flowchart for the process
 3. The following [video for the **Back To Back SWE**](https://youtu.be/JzONv5kaPJM?si=abBCNaauUhB2uUjM) channel was used to understand the basic flow of backtracking in Sudoku 
-
-
